@@ -1,0 +1,95 @@
+@import '_variables.scss';
+
+/*************************PARTNERS*************************/
+.partners-container {
+    max-width: 843px;
+    margin-bottom: 70px;
+}
+
+.partners-container .header-sections {
+    margin-bottom: 0;
+}
+
+.partners-header-section {
+    margin-top: 32px;
+    margin-bottom: 13px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: $colorBlack;
+}
+
+.partners-text {
+    max-width: 98%;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: $colorGreyLight;
+}
+
+.partners-text-add {
+    max-width: 624px;
+    padding-left: 37px;
+    line-height: 150%;
+}
+
+.partners-icon1 {
+    background: url('/img/network.svg') left top no-repeat transparent;
+}
+
+.partners-icon2 {
+    background: url('/img/briefcase.svg') left top no-repeat transparent;
+}
+
+.partners-icon3 {
+    background: url('/img/git-pull-request.svg') left top no-repeat transparent;
+}
+
+.partners-text-label {
+    display: block;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorOrange;
+}
+
+.partners-list {
+    margin: 0;
+    margin-bottom: 33px;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.partners-list li::marker {
+    color: $colorOrange;
+}
+
+.partners-list .partners-text {
+    padding-left: 7px;
+}
+
+.partners-garanty {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.partners-garanty-text {
+    max-width: 515px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: $colorBlack;
+}
+
+.partners-img {
+    width: 77px;
+    height: 116px;
+    margin-right: 32px;
+}

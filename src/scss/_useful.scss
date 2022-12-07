@@ -1,0 +1,76 @@
+@import '_variables.scss';
+
+/* - useful - */
+.useful__container {
+    margin-bottom: 50px;
+}
+
+.useful-swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.useful-swiper .swiper-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.useful-navigation-btn {
+    display: flex;
+}
+
+.useful-mob .useful-navigation-btn {
+	display: none;
+	margin-top: 16px;
+}
+
+.useful-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.useful__slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorBg;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.useful-img {
+    width: 100%;
+    height: 100%;
+}
+
+.offers-big-img {
+	display: inline-block;
+	width: 230px;
+	height: 107px;
+	margin-left: 130px;
+}
+
+.offers-big {
+	display: flex;
+}
+
+.useful__card-content {
+    padding: 30px;
+}
+
+.useful-text {
+    min-height: 100px;
+    margin-bottom: 38px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: $colorBlack;
+}

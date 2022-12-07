@@ -1,0 +1,129 @@
+@import '_variables.scss';
+
+/* - offers - */
+.offers__container {
+    margin-bottom: 46px;
+}
+
+.offers-swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.offers-swiper .header-sections {
+    margin-bottom: 0;
+}
+
+.offers-swiper .swiper-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.offers-navigation-btn {
+    display: flex;
+}
+
+.offers-mob .offers-navigation-btn {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+
+.offers-swiper .swiper-slide {
+    padding: 36px 30px 30px 35px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.offers__slider-item {
+    width: 296px;
+    background-color: $colorBg;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.offers-slide2,
+.offers-slide5 {
+    width: 624px;
+}
+
+
+.offers-label {
+	display: block;
+	width: 92px;
+	height: 34px;
+	transform: translateX(-30px);
+	margin-bottom: 8px;
+	padding-top: 7px;
+	font-family: 'OpenSans-Bold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	color: $colorWhite;
+	background: url('/img/bg.png') left center no-repeat transparent;
+	background-size: contain;
+	-webkit-transform: translateX(-30px);
+	-moz-transform: translateX(-30px);
+	-ms-transform: translateX(-30px);
+	-o-transform: translateX(-30px);
+}
+
+.offers-img {
+    width: auto;
+    height: 210px;
+    margin-left: 30px;
+    margin-bottom: 14px;
+}
+
+.offers-big-img {
+	display: inline-block;
+	width: 230px;
+	height: 107px;
+	margin-left: 125px;
+}
+
+.offers-slide2 .offers-img,
+.offers-slide5 .offers-img {
+    width: 450px;
+}
+
+.offers__card-header {
+    max-width: 221px;
+    margin-bottom: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: $colorBlack;
+}
+
+.offers__box-price {
+    margin-bottom: 23px;
+}
+
+.offers-price {
+    margin-right: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: $colorOrange;
+}
+
+.offers-price-old {
+    text-decoration: line-through;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $colorGrey;
+}

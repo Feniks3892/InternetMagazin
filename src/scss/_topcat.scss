@@ -1,0 +1,261 @@
+@import '_variables.scss';
+
+  /*--------topcat--------*/
+.topcat__container {
+	padding-top: 0;
+	margin-bottom: 63px;
+}
+
+.topcat__header {
+	margin-bottom: 12px;
+	font-family: 'TT Firs Neue700';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 31px;
+	color: $colorBlack;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 32px;
+	counter-reset: card;
+	padding: 0;
+	margin-top: 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	min-height: 405px;
+	padding: 47px 30px 23px;
+	font-size: 16px;
+	background-color: $colorBg;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.card-1 {
+	min-height: 511px;
+}
+
+.card:nth-child(1) {
+	grid-area: one;
+}
+
+.card:nth-child(2) {
+	grid-area: two;
+}
+
+.card:nth-child(3) {
+	grid-area: three;
+}
+
+.card:nth-child(4) {
+	grid-area: four;
+}
+
+.card:nth-child(5) {
+	grid-area: five;
+}
+
+.card__categories {
+	margin-bottom: 14px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	color: $colorGrey;
+}
+
+.categories-name {
+	margin-right: 30px;
+	margin-bottom: 4px;
+}
+
+.card__categories-header {
+	margin-bottom: 30px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 33px;
+	color: $colorBlack;
+}
+
+.card__categories-header .categories-link-icon {
+	display: none;
+}
+
+.card__categories-img {
+	width: 91%;
+	transform: translateX(-30px);
+	-webkit-transform: translateX(-30px);
+	-moz-transform: translateX(-30px);
+	-ms-transform: translateX(-30px);
+	-o-transform: translateX(-30px);
+}
+
+.categories-link,
+.card__categories-link {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: auto;
+	width: 115px;
+	font-family: 'OpenSans-Bold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 120%;
+	color: $colorPerple;
+	border: none;
+	outline: none;
+	transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+}
+
+.categories-link::before,
+.card__categories-link::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 77px;
+	height: 1px;
+	border: 1px solid $colorPerple;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
+.categories-link:hover:before,
+.card__categories-link:hover:before,
+.categories-link:hover:before,
+.card__categories-link:focus:before {
+	opacity: 1;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link:active,
+.card__categories-link:active {
+	color: $colorPerpleActive;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link:active:before,
+.card__categories-link:active:before {
+	border: 1px solid $colorPerpleActive;
+	opacity: 1;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link-icon {
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin-left: 5px;
+	stroke: $colorPerple;
+	border-radius: 50%;
+	transition: stroke 0.3s ease-in-out;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	-webkit-transition: stroke 0.3s ease-in-out;
+	-moz-transition: stroke 0.3s ease-in-out;
+	-ms-transition: stroke 0.3s ease-in-out;
+	-o-transition: stroke 0.3s ease-in-out;
+}
+
+.categories-link:hover .icon-arrow,
+.card__categories-link:hover .icon-arrow {
+	stroke: $colorWhite;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link:hover .categories-link-icon,
+.card__categories-link:hover .categories-link-icon{
+	background-color: $colorPerple;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link:focus .icon-arrow,
+.card__categories-link:focus .icon-arrow {
+	stroke: $colorWhite;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link:focus .categories-link-icon,
+.card__categories-link:focus .categories-link-icon{
+	background-color: $colorPerpleHover;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link:active .icon-arrow,
+.card__categories-link:active .icon-arrow {
+	stroke: $colorWhite;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link:active .icon-circle,
+.card__categories-link:active .icon-circle {
+	stroke: $colorPerpleActive;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.categories-link:active .categories-link-icon,
+.card__categories-link:active .categories-link-icon{
+	background-color: $colorPerpleActive;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}

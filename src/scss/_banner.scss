@@ -1,0 +1,42 @@
+@import '_variables.scss';
+
+ /* -------banner------- */
+ .banner-bg {
+	background: url('/img/oksford-bg.jpg') center center no-repeat gray;
+	background-size: cover;
+  }
+  
+  .banner__container {
+	height: 600px;
+	margin-bottom: 70px;
+	padding-top: 152px;
+  }
+  
+  .banner__header {
+	margin-bottom: 4px;
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 60px;
+	line-height: 120%;
+	color: #D5B986;
+  }
+  
+  .banner__text {
+	max-width: 508px;
+	margin-bottom: 51px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 116%;
+	color: $colorWhite;
+  }
+
+  .btn-banner {
+	padding: 21px 32px;
+  }
+
+  .banner-btn-mob .btn-banner{
+	display: none;
+	margin-bottom: 70px;
+  }

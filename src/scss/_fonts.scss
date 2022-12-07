@@ -1,0 +1,24 @@
+/*---OpenSans----*/
+@font-face {
+  font-family: 'Open Sans';
+  src: local('');
+  src: url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*---OpenSans-Bold---*/
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: local('');
+  src: url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+/*---Playfair Display---*/
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('');
+  src: url('../fonts/PlayfairDisplay-Black.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
